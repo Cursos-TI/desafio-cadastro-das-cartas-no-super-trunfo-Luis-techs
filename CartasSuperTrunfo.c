@@ -8,9 +8,9 @@ int main(){
 
     char Estado;
     int Cidade;
-    double populacao;
-    double Area;
-    double PIB;
+    float populacao;
+    float Area;
+    float PIB;
     int Turismo;
 
     printf("Seja bem vindo (a) ao jogo Super-Trunfo!\n");
@@ -24,7 +24,7 @@ int main(){
     printf("Digite a População do Cidade: ");
     scanf("%f", &populacao);
 
-    printf("Digite a Area do Cidade: ");
+    printf("Digite a Area do Cidade m²: ");
     scanf("%f", &Area);
 
     printf("Digite o PIB da Cidade: ");
@@ -34,10 +34,10 @@ int main(){
     scanf("%d", &Turismo);
 
     printf("Código da carta: %c%d\n", Estado, Cidade);
-    printf("População: %f\n", populacao);
+    printf("População: %.9f\n", populacao);
     printf("Área: %f\n", Area);
-    printf("PIB: %f\n", PIB);
-    printf("Pontos de turismo: %d\n");
+    printf("PIB: %.9f\n", PIB);
+    printf("Pontos de turismo: %d\n", Turismo);
 
     return 0;
 
