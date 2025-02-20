@@ -7,6 +7,8 @@ int main(){
     // Exemplo: Ceará, cidade: Fortaleza -> F01; - 13/02/2025
     // Calculo da Densidade Populacional e PIB per Capita; - 18/02/2025
     // Implementando Super Poder que é a soma da População, Area, PIB, Pontos turisticos, Densidade e per Capita; - 18/02/2025
+    // Implementando a logiod o jogo Super Trunfo; - 20/02/2025
+    // E algumas modificação na identação do codigo; - 20/20/2025
 
     char Estado[50];
     char codigo[10];
@@ -20,6 +22,7 @@ int main(){
     float superpoder;
 
     printf("*** Seja bem vindo(a) ao jogo Super-Trunfo! ***\n");
+    printf("*** Cadastro da primeira carta ***\n");
     printf("Escolha um Estado!!\n");
     printf("Digite o nome do Estado escolhido: ");
     scanf(" %s", &Estado);
@@ -57,7 +60,7 @@ int main(){
     printf("Pontos de turismo: %d\n", Turismo);
     printf("Densidade Populacional: %f\n", densidade);
     printf("PIB per Capita: %f\n", percapita);
-    printf("Super Poder: %f\n", superpoder);
+    printf("Super Poder: %f\n\n", superpoder);
 
 
     char Estado2[50];
@@ -71,6 +74,7 @@ int main(){
     float percapita2;
     float superpoder2;
 
+    printf("*** Cadastro da segunda carta ***\n");
     printf("Escolha o segundo Estado!!\n");
     printf("Digite o nome do Estado escolhido: ");
     scanf(" %s", &Estado2);
@@ -107,7 +111,7 @@ int main(){
     printf("Pontos de turismo: %d\n", Turismo2);
     printf("Densidade Populacional: %f\n", densidade2);
     printf("PIB per Capita: %f\n", percapita2);
-    printf("Super Poder: %f\n", superpoder2);
+    printf("Super Poder: %f\n\n", superpoder2);
 
 
     printf("*** Comparação das Cartas ***\n");
@@ -125,7 +129,14 @@ int main(){
     printf("O per Capita da carta %s é maior que o per Capita da carta %s\n", codigo, codigo2);
     printf("%d\n", (int) percapita >  percapita2);
     printf("O Super Poder da carta %f é maior que o Super Poder da carta %f\n", superpoder > superpoder2);
-    printf("%d", (int) superpoder > superpoder2);
+    printf("%d\n\n", (int) superpoder > superpoder2);
+
+    printf("*** Definindo vencedor pela População ***\n");
+    if (populacao > populacao2){
+        printf("A carta %s é a ganhadora !!!", codigo);
+    }else{
+        printf("A carta %s é a ganhadora !!!", codigo2);
+    }
 
 
 
